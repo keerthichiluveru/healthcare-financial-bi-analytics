@@ -1,0 +1,13 @@
+CostCenterID,CostCenterName,DepartmentID
+CC101,Finance Operations,D01
+CC102,FP&A,D01
+CC201,Claims Processing,D02
+CC202,Claims Quality,D02
+CC301,Member Contact Center,D03
+CC401,Provider Relations,D04
+CC501,Data & Analytics,D05
+CC502,Infrastructure,D05
+CC601,People Operations,D06
+CC701,Commercial Growth,D07
+CC801,Care Management,D08
+CC802,Population Health,D08

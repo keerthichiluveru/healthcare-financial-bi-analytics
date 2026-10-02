@@ -1,0 +1,9 @@
+DepartmentID,DepartmentName,BusinessUnit
+D01,Finance,Corporate
+D02,Claims,Operations
+D03,Member Services,Operations
+D04,Provider Network,Operations
+D05,Information Technology,Corporate
+D06,Human Resources,Corporate
+D07,Sales & Marketing,Commercial
+D08,Clinical Programs,Operations

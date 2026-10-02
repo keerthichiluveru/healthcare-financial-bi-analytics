@@ -1,0 +1,12 @@
+AccountID,AccountName,AccountType,ExpenseCategoryID
+A100,Premium Revenue,Revenue,
+A110,Service Revenue,Revenue,
+A200,Salary Expense,Expense,EC01
+A210,Benefits Expense,Expense,EC01
+A300,Cloud & Software,Expense,EC02
+A310,IT Infrastructure,Expense,EC02
+A400,Professional Services,Expense,EC03
+A500,Facilities Expense,Expense,EC04
+A600,Marketing Expense,Expense,EC05
+A700,Claims & Medical Cost,Expense,EC06
+A800,Administrative Expense,Expense,EC07
