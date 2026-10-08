@@ -45,7 +45,13 @@ The project follows an end-to-end BI workflow:
 
 ![Financial Performance Dashboard](financial-performance-dashboard.png)
 
-*Power BI dashboard showing actuals, budgets, forecasts, monthly trends, and budget variance analysis.*
+**Dashboard Overview:** Tracks actuals, budgets, forecasts, monthly financial trends, and budget variances.
+
+### Cost Center & Department Financial Analysis
+
+![Cost Center and Department Financial Analysis](cost-center-department-financial-analysis.png)
+
+**Dashboard Overview:** Analyzes spending by cost center and department, compares actuals against budgets, and highlights favorable and unfavorable variances.
 
 ---
 
