@@ -41,13 +41,13 @@ The project follows an end-to-end BI workflow:
 
 ## 📊 Dashboard Preview
 
-### Financial Performance | Budget vs Actual
+### 1. Executive Financial Overview Dashboard
 
-![Financial Performance Dashboard](financial-performance-dashboard.png)
+![Executive Financial Overview](executive-financial-overview.png)
 
 **Dashboard Overview:** Tracks actuals, budgets, forecasts, monthly financial trends, and budget variances.
 
-### Cost Center & Department Financial Analysis
+### 2. Cost Center & Department Financial Analysis Dashboard
 
 ![Cost Center and Department Financial Analysis](cost-center-department-financial-analysis.png)
 
