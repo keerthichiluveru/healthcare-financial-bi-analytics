@@ -39,6 +39,16 @@ The project follows an end-to-end BI workflow:
 
 ---
 
+## 📊 Dashboard Preview
+
+### Financial Performance | Budget vs Actual
+
+![Financial Performance Dashboard](financial-performance-dashboard.png)
+
+*Power BI dashboard showing actuals, budgets, forecasts, monthly trends, and budget variance analysis.*
+
+---
+
 ## 💼 Business Questions
 
 This project is designed to answer questions such as:
