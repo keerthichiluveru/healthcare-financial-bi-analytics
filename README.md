@@ -1,425 +1,288 @@
+
 <div align="center">
 
 # 🏥 Healthcare Financial BI Analytics
 
-### Power BI · Financial Analytics · DAX · SQL · Microsoft Fabric
+### From Financial Data to Executive-Ready Decisions
 
-![Status](https://img.shields.io/badge/Status-In%20Progress-F59E0B?style=for-the-badge)
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
-![Fabric](https://img.shields.io/badge/Microsoft%20Fabric-742774?style=for-the-badge&logo=microsoft&logoColor=white)
-![DAX](https://img.shields.io/badge/DAX-Analytics-2563EB?style=for-the-badge)
+**An Independent Power BI Portfolio Case Study | 100% Synthetic Healthcare Data**
 
-**Independent portfolio project using synthetic healthcare financial data**
+<br>
+
+![Status](https://img.shields.io/badge/PROJECT-COMPLETED-16A34A?style=for-the-badge)
+![Power BI](https://img.shields.io/badge/POWER_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-2563EB?style=for-the-badge)
+![SQL](https://img.shields.io/badge/SQL-0F766E?style=for-the-badge)
+![Finance](https://img.shields.io/badge/FINANCIAL_ANALYTICS-1E3A8A?style=for-the-badge)
+
+<br>
+
+**FINANCIAL PERFORMANCE &nbsp; • &nbsp; BUDGET CONTROL &nbsp; • &nbsp; FORECAST ACCURACY**
+
+<br>
+
+<table>
+<tr>
+<td align="center" width="33%">
+<strong>01</strong><br>
+EXECUTIVE OVERVIEW<br>
+<sub>Actuals · Budget · Forecast</sub>
+</td>
+<td align="center" width="33%">
+<strong>02</strong><br>
+COST CENTER ANALYSIS<br>
+<sub>Spending · Variance · Departments</sub>
+</td>
+<td align="center" width="33%">
+<strong>03</strong><br>
+ADVANCED ANALYTICS<br>
+<sub>Utilization · Forecast Variance</sub>
+</td>
+</tr>
+</table>
+
+<br>
+
+[**Executive Overview**](#executive-financial-overview) &nbsp; • &nbsp;
+[**Financial Analysis**](#cost-center--department-financial-analysis) &nbsp; • &nbsp;
+[**Technical Documentation**](TECHNICAL_DOCUMENTATION.md)
 
 </div>
 
 ---
 
-## 🎯 Project Overview
+## ✨ At a Glance
 
-This project demonstrates how healthcare financial and operational data can be transformed into a governed Power BI analytics solution supporting executive reporting, financial planning, cost management, workforce analytics, and KPI monitoring.
+Healthcare finance teams need a consistent view of spending, budgets, forecasts, and cost-center performance. This project brings those perspectives into a three-page Power BI report designed to help decision-makers spot variances, compare departments, and explore monthly trends.
 
-The project follows an end-to-end BI workflow:
+| Project dimension | Delivery |
+|:--|:--|
+| **Domain** | Healthcare financial planning and performance |
+| **Report** | 3 interactive Power BI pages |
+| **Core analysis** | Actual vs. budget, actual vs. forecast, cost centers, departments, monthly trends |
+| **Technical approach** | Dimensional model, DAX measures, Power Query, SQL reference scripts |
+| **Quality evidence** | Financial reconciliation workbook and validation CSVs |
+| **Data classification** | Synthetic; no real patient or employer records |
 
-**Raw Data → Transformation → Data Model → DAX → Validation → Dashboard → Business Insight**
+## 📈 Financial Performance Snapshot
 
-### Key Focus Areas
+*Illustrative results from the synthetic dataset with report filters cleared. Rounded values are for presentation.*
 
-- Executive financial dashboards
-- Budgeting and forecasting
-- Actual vs. budget analysis
-- Forecast variance reporting
-- Revenue and expense analytics
-- Cost center reporting
-- Labor and headcount analytics
-- Financial KPI scorecards
-- Semantic modeling
-- Data validation and reconciliation
+| KPI | Result | Interpretation |
+|:--|--:|:--|
+| **Total actual** | **$1.403B** | Recorded financial activity |
+| **Total budget** | **$1.405B** | Planned amount |
+| **Budget variance** | **−$2.07M** | Actual minus budget |
+| **Budget variance %** | **−0.15%** | Spending below budget overall |
+| **Budget utilization** | **99.85%** | Actual as a share of budget |
+| **Total forecast** | **~$1.40B** | Forecast baseline, rounded |
 
----
+> **Sign convention:** `Actual − Budget`. Positive values indicate **over-budget** spending; negative values indicate **under-budget** spending. This interpretation applies to the expense-oriented comparisons in this report.
 
-## 📊 Dashboard Preview
-
-### 1. Executive Financial Overview Dashboard
-
-![Executive Financial Overview](executive-financial-overview.png)
-
-**Dashboard Overview:** Tracks actuals, budgets, forecasts, monthly financial trends, and budget variances.
-
-### 2. Cost Center & Department Financial Analysis Dashboard
-
-![Cost Center and Department Financial Analysis](cost-center-department-financial-analysis.png)
-
-**Dashboard Overview:** Analyzes spending by cost center and department, compares actuals against budgets, and highlights favorable and unfavorable variances.
+The report's **Forecast Variance %** measure compares actual spending with the forecast and responds to department, cost-center, and year filters. The figures above represent the unfiltered report; results change when users interact with slicers.
 
 ---
 
-## 💼 Business Questions
+## 🖥️ Dashboard Gallery
 
-This project is designed to answer questions such as:
+### 01 · Executive Financial Overview
 
-- 📊 How are actual expenses performing against budget and forecast?
-- 💰 Which cost centers are driving unfavorable variances?
-- 📈 How are revenue and operating expenses trending over time?
-- 👥 Which departments are contributing most to labor-cost changes?
-- 🧑‍💼 How is headcount changing across departments?
-- 🚨 Which financial KPIs require management attention?
-- 🔄 How do current-period results compare with prior periods?
-- 🎯 Where are the largest favorable and unfavorable financial variances?
+![Executive Financial Overview dashboard](executive-financial-overview.png)
 
----
+**Purpose:** Provide an executive summary of actuals, budgets, forecasts, and monthly financial performance.
 
-## 📌 Planned Dashboard Pages
+- KPI cards for actual, budget, forecast, and budget variance %
+- Monthly actual-versus-budget comparison
+- Monthly actual, budget, and forecast trends
+- Budget variance percentage over time
+- Year filtering for focused review
 
-### 1. Executive Financial Overview
+### 02 · Cost Center & Department Financial Analysis
 
-**KPIs**
+![Cost Center and Department Financial Analysis dashboard](cost-center-department-financial-analysis.png)
 
-- Total Revenue
-- Total Operating Expense
-- Operating Margin
-- Budget Variance
-- Forecast Variance
-- Revenue Growth
-- Expense Growth
-- Headcount
+**Purpose:** Identify where spending and budget deviations are concentrated.
 
-**Visuals**
+- Actual spending ranked by cost center
+- Actual versus budget by cost center
+- Budget variance % by cost center and department
+- Red/green variance indicators with an explanatory legend
+- Department, cost-center, and year slicers
 
-- Actual vs. Budget
-- Actual vs. Forecast
-- Monthly financial trend
-- Revenue and expense trend
-- Variance by department
-- Executive KPI scorecards
+### 03 · Advanced Financial Analysis
 
----
+![Advanced Financial Analysis dashboard](advanced-financial-analysis.png)
 
-### 2. Budget & Variance Analysis
+**Purpose:** Explore financial efficiency, departmental performance, and forecast behavior.
 
-Analysis covering:
-
-- Actual vs. Budget
-- Actual vs. Forecast
-- Favorable / Unfavorable Variance
-- Variance %
-- Department-level variance
-- Cost-center variance
-- Monthly variance trends
-- Variance-driver analysis
+- Budget utilization % and forecast variance % KPI cards
+- Department financial performance matrix with conditional formatting
+- Budget variance by department
+- Actual versus forecast by department
+- Top cost centers by actual spending
+- Department spending distribution
+- Monthly forecast variance trend
 
 ---
 
-### 3. Cost Center Analysis
+## 🎯 Business Questions Answered
 
-Reporting by:
+1. Are overall expenses running above or below budget?
+2. Which departments and cost centers contribute the largest budget variances?
+3. How closely do actuals track forecasts across reporting periods?
+4. Which cost centers account for the most spending?
+5. How does the financial picture change when a specific department, cost center, or year is selected?
 
-- Department
-- Cost Center
-- Expense Category
-- Month
-- Business Unit
+## 🧱 Data Model & Architecture
 
-Metrics include:
+The Power BI model uses financial fact tables and shared reporting dimensions to support reusable measures and consistent filtering.
 
-- Actual Spend
-- Budget
-- Forecast
-- Variance
-- Variance %
-- Share of Total Expense
+**Fact tables**
 
----
+| Table | Role |
+|:--|:--|
+| `FactFinancials` | Actual financial amounts |
+| `FactBudget` | Budget amounts |
+| `FactForecast` | Forecast amounts |
+| `FactHeadcount` | Headcount-related source data; not a featured metric in the final report |
 
-### 4. Labor & Headcount Analytics
+**Dimension tables**
 
-Analysis covering:
-
-- Headcount
-- FTEs
-- Labor Expense
-- Average Labor Cost
-- Departmental Headcount
-- Headcount Change
-- Labor Budget Variance
-- Workforce Cost Trends
-
----
-
-### 5. Revenue & Expense Analytics
-
-Analysis covering:
-
-- Revenue trends
-- Operating expenses
-- SG&A
-- Departmental expenses
-- Expense mix
-- Period-over-period changes
-- Revenue vs. expense performance
-
----
-
-## 🧱 Data Model
-
-The project uses a star-schema approach to support scalable and governed financial reporting.
-
-### Fact Tables
-
-- `FactFinancials`
-- `FactBudget`
-- `FactForecast`
-- `FactHeadcount`
-
-### Dimension Tables
-
-- `DimDate`
-- `DimDepartment`
-- `DimCostCenter`
-- `DimAccount`
-- `DimExpenseCategory`
-
-### Conceptual Architecture
+`DimDate` · `DimDepartment` · `DimCostCenter` · `DimAccount` · `DimExpenseCategory`
 
 ```text
-                     DimDate
-                        |
-                        |
-DimDepartment -- FactFinancials -- DimAccount
-      |                 |
-      |                 |
-DimCostCenter       DimExpenseCategory
-
-       FactBudget
-            |
-       FactForecast
-            |
-      FactHeadcount
+Synthetic financial source data
+             │
+             ▼
+   Power Query preparation
+             │
+             ▼
+Power BI dimensional data model
+  ├─ Financial fact tables
+  └─ Shared reporting dimensions
+             │
+             ▼
+       Reusable DAX KPIs
+             │
+             ▼
+ Three-page interactive report
+             │
+             ▼
+ Reconciliation and review
 ```
 
----
+> The diagram is a conceptual workflow, not an assertion of specific table relationships or cardinalities. Refer to the PBIX model view to inspect the implemented relationships.
 
-## 🧮 Example DAX Measures
+## 🧮 DAX Highlights
 
-```DAX
+The report uses reusable measures so KPI cards, charts, and matrices respond consistently to filter context.
+
+```dax
 Total Actual =
 SUM(FactFinancials[ActualAmount])
-```
 
-```DAX
 Total Budget =
 SUM(FactBudget[BudgetAmount])
-```
 
-```DAX
-Budget Variance =
-[Total Actual] - [Total Budget]
-```
-
-```DAX
-Budget Variance % =
-DIVIDE(
-    [Budget Variance],
-    [Total Budget]
-)
-```
-
-```DAX
 Total Forecast =
 SUM(FactForecast[ForecastAmount])
+
+Budget Variance =
+[Total Actual] - [Total Budget]
+
+Budget Variance % =
+DIVIDE([Budget Variance], [Total Budget])
+
+Budget Utilization % =
+DIVIDE([Total Actual], [Total Budget], 0)
+
+Forecast Variance % =
+DIVIDE([Total Actual] - [Total Forecast], [Total Forecast], 0)
 ```
 
-```DAX
-Forecast Variance =
-[Total Actual] - [Total Forecast]
-```
+**Technical note:** Percentage measures use `DIVIDE` for safe denominator handling. The explicit `0` fallback shown above is used for the two advanced KPI measures. For additional measures and commentary, see the existing DAX reference files under [`dax/`](dax/).
 
-```DAX
-Headcount =
-DISTINCTCOUNT(FactHeadcount[EmployeeID])
-```
+## ✅ Validation & Quality Controls
 
-```DAX
-Labor Cost per FTE =
-DIVIDE(
-    [Total Labor Cost],
-    [Headcount]
-)
-```
+Financial reporting requires more than attractive visuals. This project includes reconciliation artifacts to support confidence in the displayed amounts.
 
----
+| Check | Evidence / status |
+|:--|:--|
+| Actual and budget aggregate reconciliation | **PASS** in the completed financial reconciliation worksheet |
+| Report-wide actual | **$1,402,762,391.34** |
+| Report-wide budget | **$1,404,832,728.48** |
+| Calculated budget variance | **−$2,070,337.14** |
+| Budget variance rate | **−0.15%**, rounded |
+| Filter interactions | Tested in Power BI Desktop |
+| Additional source-to-report controls | Supporting CSV and workbook files retained with the project |
 
-## ⚙️ Data Engineering & Transformation
+**Validation artifacts:** `monthly-financial-reconciliation.csv`, `monthly-budget-actual-validation.csv`, and corresponding workbook files are available in the local project materials. Include them in the repository if you want reviewers to reproduce the checks.
 
-Planned data preparation includes:
+*Validation status refers to the checks performed for this portfolio project; it is not a claim of a formal external audit.*
 
-- Data-type standardization
-- Null-value handling
-- Duplicate detection
-- Account mapping
-- Cost-center mapping
-- Date standardization
-- Budget/actual reconciliation
-- Financial hierarchy creation
-- Department mapping
-- Data-quality validation
-- Source-to-report reconciliation
+## 🛠️ Tools & Skills Demonstrated
 
-### Tools
+| Area | Tools and methods |
+|:--|:--|
+| **Business intelligence** | Power BI Desktop, interactive report design, slicers, KPI cards, matrices |
+| **Analytical logic** | DAX, filter context, budget and forecast variance calculations |
+| **Data preparation** | Power Query, synthetic Excel data |
+| **Data architecture** | Fact/dimension modeling, reusable measures |
+| **Supporting technical artifacts** | SQL scripts and DAX measure documentation |
+| **Quality assurance** | Reconciliation, aggregate comparisons, visual interaction testing |
+| **Business analysis** | Healthcare finance, departmental cost management, budget monitoring |
 
-![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white)
-![Power Query](https://img.shields.io/badge/Power%20Query-Transformation-217346?style=flat-square)
-![Fabric](https://img.shields.io/badge/Microsoft%20Fabric-742774?style=flat-square&logo=microsoft&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
+**Scope note:** Microsoft Fabric, Azure, Databricks, and Python are not claimed as implemented components of this finished Power BI report. They may be explored in separate projects.
 
----
-
-## ✅ Validation
-
-Financial reporting will include validation checks such as:
-
-- Actual totals reconcile to source data
-- Budget totals reconcile to budget source
-- Forecast totals reconcile to forecast source
-- Department totals reconcile to enterprise totals
-- Cost-center mappings are complete
-- Duplicate financial transactions are identified
-- Missing account mappings are flagged
-- Percentage measures handle zero denominators correctly
-- Date relationships behave correctly
-- Headcount totals reconcile to source records
-
----
-
-## 🛠️ Technology Stack
-
-### Business Intelligence
-
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
-![DAX](https://img.shields.io/badge/DAX-Advanced-2563EB?style=flat-square)
-![Power Query](https://img.shields.io/badge/Power%20Query-Data%20Transformation-217346?style=flat-square)
-
-### Data & Engineering
-
-![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white)
-
-### Analytics Architecture
-
-![Fabric](https://img.shields.io/badge/Microsoft%20Fabric-742774?style=flat-square&logo=microsoft&logoColor=white)
-![Semantic Models](https://img.shields.io/badge/Semantic%20Models-Governed%20BI-purple?style=flat-square)
-![Star Schema](https://img.shields.io/badge/Star%20Schema-Dimensional%20Modeling-orange?style=flat-square)
-
----
-
-## 📁 Repository Structure
+## 📂 Repository Contents
 
 ```text
 healthcare-financial-bi-analytics/
-│
 ├── README.md
-│
 ├── Healthcare_Financial_BI_Analytics.pbix
 ├── healthcare-financial-bi-synthetic-data.xlsx
-│
 ├── executive-financial-overview.png
 ├── cost-center-department-financial-analysis.png
-│
+├── advanced-financial-analysis.png         # Add with final upload
 ├── data/
 │   └── raw/
-│
-├── sql/
-│
 ├── dax/
-│
+├── sql/
 └── documentation/
 ```
 
----
+The repository tree above reflects the **intended final upload state**; the advanced dashboard image and any validation artifacts not yet uploaded should be added before publishing this revision.
 
-## 🚀 Skills Demonstrated
+## 📚 Technical Reference
 
-![Financial Analytics](https://img.shields.io/badge/Financial%20Analytics-Executive%20Reporting-blue?style=flat-square)
-![Forecasting](https://img.shields.io/badge/Forecasting-Planning-green?style=flat-square)
-![Variance Analysis](https://img.shields.io/badge/Variance%20Analysis-Financial%20Performance-orange?style=flat-square)
-![Semantic Modeling](https://img.shields.io/badge/Semantic%20Modeling-Enterprise%20BI-purple?style=flat-square)
+- **Power BI report:** [`Healthcare_Financial_BI_Analytics.pbix`](Healthcare_Financial_BI_Analytics.pbix)
+- **Synthetic source workbook:** [`healthcare-financial-bi-synthetic-data.xlsx`](healthcare-financial-bi-synthetic-data.xlsx)
+- **DAX documentation:** [`dax/`](dax/)
+- **SQL reference files:** [`sql/`](sql/)
+- **Supporting documentation:** [`documentation/`](documentation/)
 
-- Financial Analytics
-- Budgeting & Forecasting
-- Variance Analysis
-- Cost Center Reporting
-- Labor & Headcount Analytics
-- Power BI Development
-- Advanced DAX
-- Power Query
-- SQL
-- Semantic Modeling
-- Star Schema
-- Microsoft Fabric
-- Data Validation
-- Data Reconciliation
-- Executive Dashboard Design
+### How to Explore
 
----
+1. Download the PBIX and synthetic workbook from this repository.
+2. Open the PBIX in **Power BI Desktop**.
+3. If the data source path differs from your local machine, update the workbook path in Power Query and refresh.
+4. Explore the three report pages and test the year, department, and cost-center slicers.
+5. Review the DAX definitions and reconciliation evidence alongside the report.
 
-## 🔐 Portfolio Data Policy
+## 🔒 Data Privacy & Project Scope
 
-This project uses synthetic data created specifically for portfolio demonstration.
+This is an **independent portfolio project** using **synthetic healthcare financial data**. It is not a deployment for a real healthcare organization and does not contain confidential employer information, patient records, or personally identifiable information.
 
-No confidential employer, customer, healthcare-member, financial, production, or personally identifiable information is included.
-
----
-
-## 🎯 Project Roadmap
-
-### Completed
-- [x] Create synthetic healthcare financial dataset
-- [x] Develop SQL transformation logic
-- [x] Create DAX measure library
-- [x] Build executive financial overview dashboard
-- [x] Build cost center and department financial analysis dashboard
-- [x] Add dashboard screenshots
-
-### In Progress / Validation
-- [ ] Verify star-schema data model
-- [ ] Complete end-to-end validation and reconciliation
-- [ ] Finalize project documentation
-
-### Planned Enhancements
-- [ ] Build dedicated budget and variance dashboard
-- [ ] Build labor and headcount analytics dashboard
-
----
-
-## 📊 Project Deliverables
-
-### Available in This Repository
-- Power BI report (.pbix) with two financial analytics dashboards
-- Synthetic healthcare financial dataset
-- SQL transformation and validation scripts
-- DAX measure library
-- Executive Financial Overview dashboard screenshot
-- Cost Center & Department Financial Analysis dashboard screenshot
-- Supporting project documentation
-
-### In Progress
-- Star-schema model verification
-- End-to-end financial reconciliation and validation
-- Final project documentation and executive analytics case study
-
-### Planned Enhancements
-- Dedicated Budget & Variance Analysis dashboard
-- Labor & Headcount Analytics dashboard
+The report demonstrates financial BI design and validation practices; it does not represent an audited financial statement or a production-certified data platform.
 
 ---
 
 <div align="center">
 
-### Turning healthcare financial data into reliable executive insight.
+### Built to turn financial complexity into clear, actionable insight.
 
-**Power BI · Financial Analytics · SQL · DAX · Microsoft Fabric**
+**Power BI · DAX · Healthcare Financial Analytics · Data Validation**
+
+[⬆ Back to top](#-healthcare-financial-bi-analytics)
 
 </div>
