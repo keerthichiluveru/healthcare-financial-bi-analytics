@@ -394,21 +394,25 @@ No confidential employer, customer, healthcare-member, financial, production, or
 
 ---
 
-## 📊 Final Deliverables
+## 📊 Project Deliverables
 
-When completed, this repository will include:
-
-- Power BI dashboard
-- Synthetic source datasets
-- SQL transformation scripts
-- SQL validation scripts
+### Available in This Repository
+- Power BI report (.pbix) with two financial analytics dashboards
+- Synthetic healthcare financial dataset
+- SQL transformation and validation scripts
 - DAX measure library
-- Data dictionary
-- Business rules
-- Data model documentation
-- Dashboard screenshots
-- Validation checks
-- Executive analytics case study
+- Executive Financial Overview dashboard screenshot
+- Cost Center & Department Financial Analysis dashboard screenshot
+- Supporting project documentation
+
+### In Progress
+- Star-schema model verification
+- End-to-end financial reconciliation and validation
+- Final project documentation and executive analytics case study
+
+### Planned Enhancements
+- Dedicated Budget & Variance Analysis dashboard
+- Labor & Headcount Analytics dashboard
 
 ---
 
