@@ -322,28 +322,20 @@ healthcare-financial-bi-analytics/
 │
 ├── README.md
 │
+├── Healthcare_Financial_BI_Analytics.pbix
+├── healthcare-financial-bi-synthetic-data.xlsx
+│
+├── executive-financial-overview.png
+├── cost-center-department-financial-analysis.png
+│
 ├── data/
-│   ├── raw/
-│   └── processed/
+│   └── raw/
 │
 ├── sql/
-│   ├── transformations.sql
-│   └── validation.sql
 │
 ├── dax/
-│   └── measures.md
 │
-├── documentation/
-│   ├── data-dictionary.md
-│   └── business-rules.md
-│
-├── screenshots/
-│   ├── executive-overview.png
-│   ├── variance-analysis.png
-│   └── headcount-analysis.png
-│
-└── power-bi/
-    └── healthcare-financial-analytics.pbix
+└── documentation/
 ```
 
 ---
