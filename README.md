@@ -373,19 +373,24 @@ No confidential employer, customer, healthcare-member, financial, production, or
 
 ---
 
-## 🧭 Project Roadmap
+## 🎯 Project Roadmap
 
-- [ ] Create synthetic healthcare financial dataset
-- [ ] Build star-schema data model
-- [ ] Develop SQL transformation logic
-- [ ] Create DAX measure library
-- [ ] Build executive overview dashboard
-- [ ] Build budget and variance dashboard
-- [ ] Build cost-center dashboard
-- [ ] Build labor/headcount dashboard
-- [ ] Complete validation and reconciliation
-- [ ] Add dashboard screenshots
-- [ ] Publish final project documentation
+### Completed
+- [x] Create synthetic healthcare financial dataset
+- [x] Develop SQL transformation logic
+- [x] Create DAX measure library
+- [x] Build executive financial overview dashboard
+- [x] Build cost center and department financial analysis dashboard
+- [x] Add dashboard screenshots
+
+### In Progress / Validation
+- [ ] Verify star-schema data model
+- [ ] Complete end-to-end validation and reconciliation
+- [ ] Finalize project documentation
+
+### Planned Enhancements
+- [ ] Build dedicated budget and variance dashboard
+- [ ] Build labor and headcount analytics dashboard
 
 ---
 
